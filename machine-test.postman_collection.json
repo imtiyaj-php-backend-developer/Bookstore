@@ -1,0 +1,374 @@
+{
+	"info": {
+		"_postman_id": "320add75-89ff-49eb-b6cd-3aa151e8fc15",
+		"name": "machine-test",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "33444724",
+		"_collection_link": "https://ankit3-6692.postman.co/workspace/Ankit-Workspace~4f08cfb9-24d7-40d6-902e-f94d5930a785/collection/33444724-320add75-89ff-49eb-b6cd-3aa151e8fc15?action=share&source=collection_link&creator=33444724"
+	},
+	"item": [
+		{
+			"name": "login",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {
+					"accept": true
+				}
+			},
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\":\"imtiyaj7260@gmail.com\",\r\n    \"password\":\"Test@123\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/login",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:8000/api/register",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {
+					"accept": true
+				}
+			},
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\":\"Raju\",\r\n    \"email\":\"raju7260@gmail.com\",\r\n    \"password\":\"Test@123\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/register",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"register"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:8000/api/logout",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {
+					"accept": true
+				}
+			},
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiNGY2NjRjOTgxNDVjMjQ3MGQ4ZDBlNGNkOTU3NDY0N2U2YjVlM2U4YzE2Y2Y2OGIzOGY3YjJmMmE2N2M0Mjk3ZTEwZjk1MGJjNjE2NDdjYmUiLCJpYXQiOjE3MzEzNTE2NzUuNDgzNzE3LCJuYmYiOjE3MzEzNTE2NzUuNDgzNzE5LCJleHAiOjE3NjI4ODc2NzUuNDcyMDgyLCJzdWIiOiIxIiwic2NvcGVzIjpbXX0.kHF8qsXck9B2RAokXaWZor-9KfyfuDuLzb0x3u78KR2EERKsyeHIuzSl-Gmku8o78fLGqPgiRY_wshyR9Q11v0JCO-03Q55JqYW-ZzjGG-Lgip8rDnijhwIGc3pakpz6CFzigGKVjQuPdg64819ml2AbHtmbfsDR0Cyhb4UI1yLx6GRLrB36xBV63gwyP5Gz9ASAOW668X9b8yjTe8x2U4CvJ-Udh75bJmcZ4kOnc7EWNMQdFoWe8M_pd14phZl-jbMPVwIAtImWTB8IHGR3Y-C3SSPvfIm7y0qbKaoX5GyGFA_xmYFkrdKH8PFixItDCosOXh-Qy0u4kbkwkAb__dUQJcZ6b6bR6FmKrlxOJpi00iemEOrkVKjyrSySqGSZwEnXDcC1HpRwC-87QLoPeepxAA58Ann95C4wnDDlDFzmSYcSph1YnMDOh84wTCAvpFYZTWhu5UrfyUMWWJK0VK34ckiBbAf9odt-4Zq-v-se3USiHzbcl86LeZfeXhEIGaPcHDP9B-xshSFzuhxTUnwMo2HBAyF0xO0T7q-Z3-FXWqHO6WfC0oNi-yWAPKbojEtRp1b9P--_M39hoeK7paZC8YvKu2Dnr-4JeMm7WK-f5cKbcNHPJrPjmSGbfs-kcj_OVsFRMkiKP24mDoqtWP1HkZxc0QDk8SZ0mfX0opk",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/logout",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"logout"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:8000/api/product-add",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {
+					"accept": true
+				}
+			},
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vMTI3LjAuMC4xOjgwMDAvYXBpL2xvZ2luIiwiaWF0IjoxNzMxNDA2NzI5LCJleHAiOjE3MzE0MTAzMjksIm5iZiI6MTczMTQwNjcyOSwianRpIjoiNThHWGVzeHN5UzFuRWhvQiIsInN1YiI6IjEiLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.zW9FrcyHZc-drxtiE5H2QsW-JQ-IyQWNayGvqJLrtJ0",
+						"type": "text"
+					},
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"title\" : \"testing\",\r\n    \"author\" : \"admin\",\r\n    \"ISBN\" : \"12345\",\r\n    \"Pages\" : \"100\",\r\n    \"Language\" : \"English\",\r\n    \"publisher\" : \"testing\",\r\n    \"published_date\" : \"2024-11-12\"\r\n                \r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/book-add",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"book-add"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:8000/api/fetch-book",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {
+					"accept": true
+				}
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vMTI3LjAuMC4xOjgwMDAvYXBpL2xvZ2luIiwiaWF0IjoxNzMxNDA2NzI5LCJleHAiOjE3MzE0MTAzMjksIm5iZiI6MTczMTQwNjcyOSwianRpIjoiNThHWGVzeHN5UzFuRWhvQiIsInN1YiI6IjEiLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.zW9FrcyHZc-drxtiE5H2QsW-JQ-IyQWNayGvqJLrtJ0",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/fetch-book",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"fetch-book"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:8000/api/book-add",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {
+					"accept": true
+				}
+			},
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vMTI3LjAuMC4xOjgwMDAvYXBpL2xvZ2luIiwiaWF0IjoxNzMxNDA2NzI5LCJleHAiOjE3MzE0MTAzMjksIm5iZiI6MTczMTQwNjcyOSwianRpIjoiNThHWGVzeHN5UzFuRWhvQiIsInN1YiI6IjEiLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.zW9FrcyHZc-drxtiE5H2QsW-JQ-IyQWNayGvqJLrtJ0",
+						"type": "text"
+					},
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"title\" : \"testing\",\r\n    \"author\" : \"admin\",\r\n    \"ISBN\" : \"12345\",\r\n    \"Pages\" : \"100\",\r\n    \"Language\" : \"English\",\r\n    \"publisher\" : \"testing\",\r\n    \"published_date\" : \"2024-11-12\"\r\n                \r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/book-add",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"book-add"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:8000/api/book-update",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {
+					"accept": true
+				}
+			},
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vMTI3LjAuMC4xOjgwMDAvYXBpL2xvZ2luIiwiaWF0IjoxNzMxNDA2NzI5LCJleHAiOjE3MzE0MTAzMjksIm5iZiI6MTczMTQwNjcyOSwianRpIjoiNThHWGVzeHN5UzFuRWhvQiIsInN1YiI6IjEiLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.zW9FrcyHZc-drxtiE5H2QsW-JQ-IyQWNayGvqJLrtJ0",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"book_id\":\"1\",\r\n    \"title\" : \"testing update\",\r\n    \"author\" : \"admin\",\r\n    \"ISBN\" : \"12345\",\r\n    \"Pages\" : \"100\",\r\n    \"Language\" : \"English\",\r\n    \"publisher\" : \"testing\",\r\n    \"published_date\" : \"2024-11-12\"\r\n                \r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/book-update",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"book-update"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:8000/api/delete-book",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {
+					"accept": true
+				}
+			},
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vMTI3LjAuMC4xOjgwMDAvYXBpL2xvZ2luIiwiaWF0IjoxNzMxNDA2NzI5LCJleHAiOjE3MzE0MTAzMjksIm5iZiI6MTczMTQwNjcyOSwianRpIjoiNThHWGVzeHN5UzFuRWhvQiIsInN1YiI6IjEiLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.zW9FrcyHZc-drxtiE5H2QsW-JQ-IyQWNayGvqJLrtJ0",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "book_id",
+							"value": "1",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/delete-book",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"delete-book"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
